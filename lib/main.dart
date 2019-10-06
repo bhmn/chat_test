@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:messio_chat/pages/ConversationPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.grey,
+        primarySwatch: Colors.green,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -53,7 +54,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    return Scaffold(
+    return ConversationPage();
+   /* return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
@@ -62,6 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child:Text('Salam')
       ),
-    );
+    );*/
   }
 }

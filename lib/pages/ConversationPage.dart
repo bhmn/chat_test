@@ -21,7 +21,7 @@ class _ConversationPageSate extends State<ConversationPage>{
             Column(
               children: <Widget>[
                 ChatListWidget(),
-                InputWidegt()
+                InputWidget()
               ],
             )
           ],

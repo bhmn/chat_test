@@ -21,7 +21,7 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
           )
         ]),
         child: Container(
-          color: Palette.primaryColor,
+          color: Palette.otherMessageColor,
           child: Row(children: <Widget>[
             Expanded(//we're dividing the appbar into 7 : 3 ratio. 7 is for content and 3 is for the display picture.
               flex: 7 ,
@@ -61,7 +61,7 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                     ),
 
                     Container(
-                      height: 12,
+                      height: 25,
                       padding: EdgeInsets.fromLTRB(20, 5, 5, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -70,12 +70,12 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                           Text('Photos', style: textStyle,),
                           VerticalDivider(
                             width: 30,
-                            color: Palette.primaryTextColorLight,
+                            color: Palette.otherMessageColor,
                           ),
                           Text('Videos', style: textStyle,),
                           VerticalDivider(
                             width: 30,
-                            color: Palette.primaryTextColorLight,
+                            color: Palette.otherMessageColor,
                           ),
                           Text('Files', style: textStyle)
                         ],
