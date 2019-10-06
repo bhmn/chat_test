@@ -8,11 +8,14 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:messio_chat/main.dart';
+import 'package:messio_chat/pages/ConversationPageList.dart';
 
 void main() {
-  testWidgets('Checking if salam shows up', (WidgetTester tester) async {
+  testWidgets('Main UI Test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
-    expect(find.text('Salam'), findsOneWidget);
+    await tester.pumpWidget(Messio());
+
+    expect(find.byType(ConversationPageList),findsOneWidget);
+
   });
 }

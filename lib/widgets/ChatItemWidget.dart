@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:messio_chat/config/Palette.dart';
 
 class ChatItemWidget extends StatelessWidget {
-  var index;
+  final int index;
 
   ChatItemWidget(this.index);
 
