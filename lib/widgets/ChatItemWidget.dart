@@ -14,20 +14,23 @@ class ChatItemWidget extends StatelessWidget {
           Row(
             children: <Widget>[
               Container(
-                child: Text('This is a sent message',
-                  style: TextStyle(color: Palette.selfMessageColor),
+                child: Text(
+                  'This is a sent message',
+                  style: TextStyle(
+                      color: Palette.selfMessageColor,
+                      fontSize: 20.0,
+                      fontStyle: FontStyle.normal),
                 ),
                 padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
                 width: 200.0,
                 decoration: BoxDecoration(
                     color: Palette.selfMessageBackgroundColor,
-                    borderRadius: BorderRadius.circular(8.0)
-                ),
+                    borderRadius: BorderRadius.circular(8.0)),
                 margin: EdgeInsets.only(right: 10.0),
               )
             ],
-            mainAxisAlignment: MainAxisAlignment
-                .end, // aligns the chatitem to right end
+            mainAxisAlignment:
+                MainAxisAlignment.end, // aligns the chatitem to right end
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
@@ -56,7 +59,10 @@ class ChatItemWidget extends StatelessWidget {
                 Container(
                   child: Text(
                     'This is a received message',
-                    style: TextStyle(color: Palette.otherMessageColor),
+                    style: TextStyle(
+                        color: Palette.otherMessageColor,
+                        fontSize: 20.0,
+                        fontStyle: FontStyle.normal),
                   ),
                   padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
                   width: 200.0,

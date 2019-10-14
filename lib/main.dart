@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:messio_chat/pages/ConversationPageList.dart';
+import 'package:messio_chat/widgets/ChatAppBar.dart';
 
 void main() => runApp(Messio());
 
@@ -54,16 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    return ConversationPageList();
-    /* return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child:Text('Salam')
-      ),
-    );*/
+     return Scaffold(
+      body: ConversationPageList()
+    );
   }
 }
